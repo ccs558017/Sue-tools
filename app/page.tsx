@@ -178,7 +178,7 @@ export default function Home() {
           </p>
           <h1 className="mt-8 text-5xl font-black leading-[1.1] tracking-tight sm:text-7xl">
             <span className="bg-gradient-to-r from-emerald-500 via-amber-500 to-red-500 bg-clip-text text-transparent">
-              Kai 的
+              Su 的
             </span>
             <br className="sm:hidden" />
             小工具箱

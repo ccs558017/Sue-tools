@@ -11,9 +11,9 @@ export default function SiteFooter() {
             className="flex items-center gap-2.5 font-bold tracking-tight"
           >
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-400 via-amber-400 to-red-500 text-sm font-black text-white">
-              K
+              S
             </span>
-            <span className="text-lg">Kai 的小工具箱</span>
+            <span className="text-lg">Su 的小工具箱</span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-500">
             幾個簡單、好用、打開就能用的小工具。不用註冊，也不用安裝。
@@ -47,7 +47,7 @@ export default function SiteFooter() {
       </div>
       <div className="border-t border-black/10 dark:border-white/10">
         <div className="mx-auto flex max-w-6xl flex-wrap justify-between gap-2 px-4 py-5 text-xs text-zinc-500 sm:px-6">
-          <span>© 2026 Kai 的小工具箱</span>
+          <span>© 2026 Su 的小工具箱</span>
           <span>運勢抽籤內容僅供娛樂</span>
         </div>
       </div>

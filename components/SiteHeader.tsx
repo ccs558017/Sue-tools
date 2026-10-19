@@ -27,9 +27,9 @@ export default function SiteHeader() {
           className="flex items-center gap-2.5 font-bold tracking-tight"
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-400 via-amber-400 to-red-500 text-sm font-black text-white">
-            K
+            S
           </span>
-          <span className="text-lg">Kai 的小工具箱</span>
+          <span className="text-lg">Su 的小工具箱</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="主選單">

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kai 的小工具箱",
+  title: "Su 的小工具箱",
   description: "抽獎轉盤、番茄鐘、運勢抽籤，打開就能用的小工具。",
 };
 
