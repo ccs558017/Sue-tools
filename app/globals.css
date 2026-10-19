@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 抽獎轉盤：外圈燈泡閃爍 */
+@keyframes bulb-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0.35;
+  }
+}
+
+/* 運勢抽籤：搖籤筒與籤紙出現 */
+@keyframes fortune-shake {
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+  15% {
+    transform: rotate(-9deg) translateY(-6px);
+  }
+  30% {
+    transform: rotate(8deg) translateY(2px);
+  }
+  45% {
+    transform: rotate(-7deg) translateY(-5px);
+  }
+  60% {
+    transform: rotate(7deg) translateY(2px);
+  }
+  75% {
+    transform: rotate(-4deg) translateY(-3px);
+  }
+}
+
+@keyframes fortune-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fortune-shake {
+  transform-origin: 50% 90%;
+  animation: fortune-shake 0.5s ease-in-out infinite;
+}
+
+.fortune-reveal {
+  animation: fortune-reveal 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fortune-shake,
+  .fortune-reveal {
+    animation: none;
+  }
+}
+
+/* 首頁背景光球緩慢漂浮 */
+@keyframes landing-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(24px, -20px) scale(1.08);
+  }
+}
+
+.landing-float {
+  animation: landing-float 14s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-float {
+    animation: none;
+  }
+}
